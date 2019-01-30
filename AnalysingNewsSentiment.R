@@ -9,7 +9,7 @@
 library(tidyverse)
 library(lubridate)
 # create list of files
-filesToAdd <-list.files("C:/Users/fxtrams/Documents/000_TradingRepo/R_NewsReading/log", pattern="s_log", full.names=TRUE)
+filesToAdd <-list.files("C:/LazyTrading/GitHub/R_NewsReading/log", pattern="s_log", full.names=TRUE)
 
 # read one file
 read_csv(filesToAdd[1])
@@ -57,7 +57,7 @@ S_LOG_Diff %>% select(day, uk_us, us_ca, uk_ca) %>%
 ## ================ Trying to investigate //DRAFT// ===================
 # bringing trading results to this graph
 # terminal 2 path *** make sure to customize this path
-path_T2 <- "C:/Program Files (x86)/FxPro - Terminal2/MQL4/Files/"
+path_T2 <- "C:/Program Files (x86)/ICMarkets MT4 Terminal2/MQL4/Files/"
 
 # -------------------------
 # read data from trades in terminal 1

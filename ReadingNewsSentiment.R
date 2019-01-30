@@ -41,7 +41,7 @@ id_hash <- Sys.time() %>% as.character.POSIXt() %>% openssl::sha1() %>% substr(1
 
 # write the log
 write.csv(summmary_df,
-          paste0("C:/Users/fxtrams/Documents/000_TradingRepo/R_NewsReading/log/s_log-",
+          paste0("C:/LazyTrading/GitHub/R_NewsReading/log/s_log-",
                  Sys.Date(), "-", id_hash, ".csv"),
           row.names = F)
 
@@ -71,7 +71,7 @@ write_news_sentiment_decision <- function(pair_string,
 # write_news_sentiment_decision("GBPCAD", ave_UK, ave_CA, 0.02, getwd()) 
 
 # decision to write in the sandbox of Terminal 2
-path_T2 <- "C:/Program Files (x86)/FxPro - Terminal2/MQL4/Files"
+path_T2 <- "C:/Program Files (x86)/ICMarkets MT4 Terminal2/MQL4/Files"
 
 # decisions writing to the sandbox
 write_news_sentiment_decision("GBPUSD", ave_UK, ave_US, 0.1, path_T2)
